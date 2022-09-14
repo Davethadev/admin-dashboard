@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid skyblue; */
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+}
+
+.projects-wrapper {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    grid-template-columns: 1fr 1fr;
+    /* grid-column: 1 / 3; */
+    background-color: #ccc;
+    padding: 1rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+}
+
+.projects-left {
+    display: grid;
+    grid-column: 1 / 2;
+    gap: 1rem;
+}
+
+.projects-right {
+    display: grid;
+    grid-column: 2 / 3;
+    gap: 1rem;
+}
+
+.project-icons {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1.5rem;
+    gap: 1.2rem;
+}
+
+.projects-wrapper h4 {
+    font-weight: 700;
+    grid-column: 1 / 4;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-rows: 3rem 10rem 10rem;
+    background-color: skyblue;
+    gap: 2.5rem;
+    padding: 1.2rem;
+}
+
+.dashboard-icon-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-icon-wrapper h3 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.dashboard-icon {
+    width: 2.5rem;
+}
+
+.dashboard-link {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.dashboard div a {
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 2;
+    padding: 1rem;
+}
+
+.header div:first-child {
+    display: flex;
+}
+
+.admin {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* flex-direction: column; */
+}
+
+.search-notification-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 30rem;
+    margin-left: 1rem;
+    border-radius: 15px;
+    padding: 0 1rem;
+}
+
+button {
+    border: none;
+    background-color: skyblue;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border-radius: 15px;
+    margin-left: 1.2rem;
+}
+
+.admin-buttons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.projects .project {
+    height: 15rem;
+    width: 22rem;
+    background-color: #fff;
+    position: relative;
+    border-left: 5px solid orange;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.projects .project h4 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.announcements-trending-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 3 / 4;
+    gap: 12rem;
+}
+
+.announcements {
+    width: 20rem;
+    position: relative;
+}
+
+.announcements-content {
+    position: absolute;
+    margin: 1rem 0;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+}
+
+.announcements-content .announcement {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+}
+
+.announcements-content .announcement:last-child {
+    border: none;
+}
+
+.trending {
+    width: 20rem;
+    height: 100%;
+    /* margin-top: 2.5rem; */
+}
+
+.trending-content {
+    margin: 1rem 0;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    /* position: absolute; */
+}
+
+.avatar-profile {
+    padding-top: 0.5rem;
+}
+
+.avatar-profile .avatar {
+    margin-right: 1rem;
+}
+
+.bell-ring,
+.search-icon,
+.home-icon,
+.card-icon,
+.message-icon,
+.clock-icon,
+.note-icon,
+.account-icon,
+.cog-icon,
+.help-icon,
+.shield-icon,
+.star-icon,
+.eye-icon,
+.source-icon {
+    width: 1.4rem;
+}
+
+.bell-ring img,
+.search-icon img,
+.home-icon img,
+.card-icon img,
+.message-icon img,
+.clock-icon img,
+.note-icon img,
+.account-icon img,
+.cog-icon img,
+.help-icon img,
+.shield-icon img,
+.star-icon img,
+.eye-icon img,
+.source-icon img {
+    width: 100%;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notification p {
+    font-weight: 700;
+}
+
+.notification .avatar {
+    width: 2.5rem;
+}
+
+.notification .avatar img {
+    border-radius: 50%;
+}
+
+.avatar {
+    width: 4rem;
+}
+
+.avatar p {
+    font-weight: 700;
+}
+
+.avatar-profile {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-profile .avatar {
+    width: 2.5rem;
+}
+
+.avatar-profile .avatar img {
+    border-radius: 50%;
+}
+
+.avatar-name {
+    font-weight: 700;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
